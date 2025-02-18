@@ -1,6 +1,6 @@
 # Using Proxies with HTTPX
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/) 
+[![Promo](https://github.com/luminati-io/Rotating-Residential-Proxies/blob/main/50%25%20off%20promo.png)](https://brightdata.com/proxy-types/residential-proxies) 
 
 This guide explains how to use proxies with HTTPX, with examples for unauthenticated, authenticated, rotating, and fallback proxies.
 
@@ -23,7 +23,7 @@ with httpx.Client(proxy=proxy_url) as client:
 
 Authenticated proxies require a username and password. Once you submit correct credentials, you are granted connection to the proxy.
 
-With authentication, the `proxy_url` looks like this: `http://<username>:<password>@<proxy_url>:<port_number>`. The following example demonstrates how to construct the user portion of the authentication string using both `zone` and `username`. It also utilizes Bright Data's datacenter proxies as the base connection.
+With authentication, the `proxy_url` looks like this: `http://<username>:<password>@<proxy_url>:<port_number>`. The following example demonstrates how to construct the user portion of the authentication string using both `zone` and `username`. It also utilizes [Bright Data's datacenter proxies](https://brightdata.com/proxy-types/datacenter-proxies) as the base connection.
 
 ```python
 import httpx
@@ -54,7 +54,7 @@ The response should look like this.
 
 ## Using Rotating Proxies
 
-Rotating proxies means creating a list of proxies and choosing from them randomly. The code snippet below creates a list of `countries`, then uses `random.choice()` on each request to pick a random country from the list. Our `proxy_url` gets formatted to fit the country. The list of rotating proxies in the code is from Bright Data.
+Rotating proxies means creating a list of proxies and choosing from them randomly. The code snippet below creates a list of `countries`, then uses `random.choice()` on each request to pick a random country from the list. Our `proxy_url` gets formatted to fit the country. The list of [rotating proxies](https://brightdata.com/solutions/rotating-proxies) in the code is from Bright Data.
 
 ```python
 import httpx
@@ -155,8 +155,8 @@ trying with residential
 response successful
 ```
 
-![Screenshot of the Amazon homepage](https://brightdata.com/wp-content/uploads/2025/01/image-1024x490.png)
+![Screenshot of the Amazon homepage](https://github.com/luminati-io/httpx-with-proxy/blob/main/Images/image.png)
 
 ## Conclusion
 
-When you combine HTTPX with Bright Data's [proxies](https://brightdata.com/proxy-types), you get a private, efficient, and reliable way to scrape the web. Start your free trial with Bright Data’s proxies today!
+When you combine HTTPX with [Bright Data's top-tier proxy services](https://brightdata.com/proxy-types), you get a private, efficient, and reliable way to scrape the web. Start your free trial with Bright Data’s proxies today!
