@@ -86,7 +86,7 @@ The code is very similar to the one for authenticated proxies. The key differenc
 
 ## Creating a Fallback Proxy Connection
 
-All examples above use datacenter and free proxies. The former often get blocked by websites, the latter aren’t very reliable. For all this to work, there should be a fallback to residential proxies.
+All examples above use datacenter and free proxies. The former often get blocked by websites, the latter isn't very reliable. For all this to work, there should be a fallback to residential proxies.
 
 To do that, let's create a function called `safe_get()`. When we call it, we first try to get the url using a datacenter connection. When this fails, we _fall back_ to our residential connection.
 
